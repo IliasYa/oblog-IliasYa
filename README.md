@@ -19,17 +19,6 @@ Puis d'y apporter quelques fonctionnalités :
 
 Pour être sur que *id* a bien la forme d'un id (donc un nombre) et pas n'importe quoi (comme "tarteauxfraises" par exemple) on peut utiliser une feature d'Express : la validation des paramètres d'URL via les expressions régulières ! Plus d'info [par ici](https://expressjs.com/en/guide/routing.html#route-parameters).
 
-## :gift: Bonus
-
-Faire la documentation de l'API avec JSDoc et Swagger, et, si vous avez encore du temps, une page d'accueil rapide avec un lien vers cette documentation.
-
-## :superhero: Super bonus
-
-Les routes complètes dans ce [tableau de routes](./docs/routes.md).
-
-Les routes POST et PATCH devront utiliser [Joi](https://www.npmjs.com/package/joi) pour valider les données passées dans la requête.
-
----
 
 ## :warning: Hépépép
 
@@ -65,3 +54,15 @@ Ah, par contre, c'est pas des insertions SQL, c'est du JSON, mais vous avez norm
 5. Parce que vous allez probablement essayer plusieurs fois avant d'y arriver, vous allez avoir des problèmes d'unicité et autres joyeusetés SQL : prévoyez de faire table rase des données déjà dans la base avant de commencer à boucler :bomb:
 
 </details>
+
+---
+
+## :gift: Bonus
+
+Faire la documentation de l'API avec JSDoc et Swagger, et, si vous avez encore du temps, une page d'accueil rapide avec un lien vers cette documentation.
+
+## :superhero: Super bonus
+
+Les routes complètes dans ce [tableau de routes](./docs/routes.md).
+
+Les routes POST et PATCH devront utiliser [Joi](https://www.npmjs.com/package/joi) pour valider les données passées dans la requête.
