@@ -1,6 +1,7 @@
 const categoryController = require('./controllers/categoryController');
 const postController = require('./controllers/postController');
 const { controlWrapper:cw , errorNotFound } = require('./service/erroService')
+const { checkForm } = require('./service/validation/validationService')
 
 const router = require('express').Router();
 
@@ -56,7 +57,7 @@ router.get('/posts/category/:id(\\d+)', cw(postController.sendPostByCategory));
  * @return {JSON} - les éléments des posts sont retournés sous format json
  */
 
-router.post('/posts', cw(postController.addNewPost));
+router.post('/posts', cw(checkForm), cw(postController.addNewPost));
 
 // Route des category
 
