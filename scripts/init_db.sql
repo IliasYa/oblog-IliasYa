@@ -1,0 +1,7 @@
+DROP DATABASE IF EXISTS oblogbase;
+
+DROP ROLE IF EXISTS oblog;
+
+CREATE USER oblog WITH PASSWORD 'oblogpass';
+
+CREATE DATABASE oblogbase OWNER oblog;
