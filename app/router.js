@@ -7,7 +7,7 @@ const router = require('express').Router();
 router.get('/posts', postController.sendAllPosts);
 router.get('/posts/:id', postController.sendOnePost);
 router.get('/posts/category/:id', postController.sendPostByCategory);
-// router.post('/posts');
+router.post('/posts', postController.addNewPost);
 
 // Route des category
 router.get('/categories', categoryController.sendAllCategories);

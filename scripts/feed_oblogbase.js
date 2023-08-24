@@ -66,4 +66,4 @@ async function importData(dataObject, tableName){
     }
 })()
 
-console.log("Import finished");
+console.log("Process completed,the import is finished");
