@@ -21,14 +21,12 @@ const postController = {
     async addNewPost(req, res){
         const newPost = req.body;
         const addPost = await postDataMapper.insertNewPost(newPost);
-        let informationReturned = "";
-        if(addPost===1){
-            informationReturned = "L'ajout a été réalisé avec succés";
-        }else{
+        let informationReturned = "Ajout réalisé avec succès";
+        if(!addPost===1){
             informationReturned = "Un problème est survenu lors de l'ajout";
         }
         res.json(informationReturned);
-    }
+    },
 }
 
 module.exports = postController;

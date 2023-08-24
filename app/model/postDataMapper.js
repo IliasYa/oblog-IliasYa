@@ -28,6 +28,7 @@ const postDataMapper = {
     },
 
     async insertNewPost(newPost){
+        // ATTENTION : pour l'ajout, la valeur retourner par le formulaire concernant la category choisi du post devra correspondre à l'id (clé primaire) de cette catégorie et non le label de la category!!!
         let counter = 0;
         const sqlValues = [];
         const sqlParameters = [];
