@@ -6,4 +6,6 @@ export PGDATABASE=oblogbase
 
 psql -f ./scripts/create_table.sql
 
+psql -f ./scripts/add_contraint.sql
+
 node ./scripts/feed_oblogbase.js
